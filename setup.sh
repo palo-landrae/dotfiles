@@ -15,5 +15,5 @@ echo . ~/z.sh >> ~/.bashrc
 # nvim
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-g clone https://github.com/palo-landrae/dotfiles-nvim ~/.config/nvim
+git clone https://github.com/palo-landrae/dotfiles-nvim ~/.config/nvim
 nvim -c 'PlugInstall'

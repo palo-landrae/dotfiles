@@ -9,3 +9,7 @@ brew install neovim
 echo 'alias g="git"' >> ~/.bashrc
 echo 'alias v="nvim"' >> ~/.bashrc
 echo 'alias commit="git add * && git commit -m "' >> ~/.bashrc
+
+# z
+wget https://raw.githubusercontent.com/rupa/z/master/z.sh -O ~/z.sh
+echo . ~/z.sh >> ~/.bashrc

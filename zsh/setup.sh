@@ -23,7 +23,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 # nvim config
 git clone https://github.com/palo-landrae/dotfiles-nvim ~/.config/nvim
-nvim -i NONE -c "PlugInstall" -c "qa"
-nvim -i NONE -c "CocInstall coc-json coc-prettier coc-pyright coc-tsserver" -c "qa"
+nvim --headless -i NONE -c "PlugInstall" -c "qa"
+#nvim -i NONE -c "CocInstall coc-json coc-prettier coc-pyright coc-tsserver" -c "qa"
 
 exec zsh -l

@@ -26,4 +26,7 @@ git clone https://github.com/palo-landrae/dotfiles-nvim ~/.config/nvim
 nvim --headless -i NONE -c "PlugInstall" -c "qa"
 #nvim -i NONE -c "CocInstall coc-json coc-prettier coc-pyright coc-tsserver" -c "qa"
 
+# cd to root
+cd $GITPOD_REPO_ROOT
+
 exec zsh -l

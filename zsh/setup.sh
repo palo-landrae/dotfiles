@@ -13,9 +13,15 @@ wget https://raw.githubusercontent.com/rupa/z/master/z.sh -O ~/z.sh
 echo . ~/z.sh >> ~/.zshrc
 
 # nvim
-brew install neovim
+#brew install neovim
+wget https://github.com/neovim/neovim/releases/tag/v0.7.0/nvim-linux64.deb -O ~/nvim-linux64.deb
+sudo apt install ~/nvim-linux64.deb
+
+# vim-plug
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+# nvim config
 git clone https://github.com/palo-landrae/dotfiles-nvim ~/.config/nvim
 nvim -i NONE -c "PlugInstall" -c "qa"
 nvim -i NONE -c "CocInstall coc-json coc-prettier coc-pyright coc-tsserver" -c "qa"

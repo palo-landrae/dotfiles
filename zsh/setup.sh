@@ -14,7 +14,7 @@ echo . ~/z.sh >> ~/.zshrc
 
 # nvim
 #brew install neovim
-wget https://github.com/neovim/neovim/releases/tag/v0.7.0/nvim-linux64.deb -O ~/nvim-linux64.deb
+wget https://github.com/neovim/neovim/releases/download/v0.7.0/nvim-linux64.deb -O ~/nvim-linux64.deb
 sudo apt install ~/nvim-linux64.deb
 
 # vim-plug

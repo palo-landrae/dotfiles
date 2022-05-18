@@ -1,6 +1,6 @@
 # zsh
 sudo chsh -s $(which zsh)
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(wget -O - https://raw.githubusercontent.com/palo-landrae/dotfiles/main/zsh/oh-my-zsh-modded.install.sh)"
 
 # setting alias
 echo 'alias g="git"' >> ~/.zshrc
@@ -17,3 +17,5 @@ brew install neovim
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 git clone https://github.com/palo-landrae/dotfiles-nvim ~/.config/nvim
+
+exec zsh -l
